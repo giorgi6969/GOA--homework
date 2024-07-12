@@ -17,6 +17,8 @@ print(x + y)
 #homework 4
 a = 5
 b = 2
+c=a/b
+print("homework 4",c)
 print(a / b)
 
 #homework 5
