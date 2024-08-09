@@ -23,10 +23,31 @@
 #variable = "კითხვა"
 #additional_text = "რა არის ეს?"
 #result = "ამ წუთში" + " " + variable + " " + additional_text
-#print(result)  # "ამ წუთში კითხვა რა არის ეს?"
-
+#print(result)
+#   
 #variable = "რა"
 #additional_text = "გქვია შენ?"
+#result = "ბიჭო" + " " + variable + " " + additonal_text
+#print(result)
+#   
+#variable = "გინდა ჩემი "
+#additional_text = "მეგობაი გახდე?"
 #result = "ბიჭო" + " " + variable + " " + additional_text
-#print(result)  # "ამ წუთში კითხვა რა არის ეს?"
+#print(result)  
 
+
+#
+#part1 = "Hello"
+#part2 = "World"
+#result = part1 + " " + part2  # კონკატინაცია
+
+#print(result)   გამოიტანს: Hello World
+
+
+
+#home work 5
+
+
+user_input = input("გთხოვთ, მოაწვდეთ ინფორმაცია: ")
+
+print("მომხმარებლის მიერ შეყვანილი ინფორმაცია:", user_input)
