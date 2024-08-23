@@ -80,15 +80,15 @@ n20 = int("987")
 
 
 n21 = float(23)
-
-
-
-
-
-
-
-
-
+n22 = float(21)
+n23 = float(46)
+n24 = float(76)
+n25 = float(78)
+n26 = float(90)
+n27 = float(56)
+n28 = float(34)
+n29 = float(65)
+n30 = float(89)
 
 
 
