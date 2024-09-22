@@ -16,5 +16,3 @@ number2 ="69"
 
 print(int(number1) + int(number2))
 
-
-input(help)
