@@ -5,4 +5,4 @@ if num >= "50":
 
 
 elif num <= "100":
- print("false1")
+ print("false")
