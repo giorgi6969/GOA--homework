@@ -9,4 +9,14 @@ elif your_grades < 90:
 
 
 if your_grades < 80:
-      print("c")        
+      print("c")    
+
+
+
+elif your_grades < 70:
+      print("D")
+
+elif your_grades < 60:
+       print("F")
+
+               
