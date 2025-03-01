@@ -1,0 +1,27 @@
+
+
+        #information {
+            font-weight: bold;
+            color: black;
+            text-transform: lowercase;
+            word-spacing: 10px;
+            text-align: center; 
+        }
+        #header1 {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+        }
+        body{
+            font-family: Arial, sans-serif;
+            background-color: gray;
+            color: #000000;
+            margin: 0;
+            padding: 20px;
+        }
+        #button{
+            background-color:gray;
+        }
+       
