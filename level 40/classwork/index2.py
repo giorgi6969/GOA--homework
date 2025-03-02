@@ -1,8 +1,8 @@
 def greet(name="Goal", surname="Orientadze"):
-    return "Hello " + name + " " + surname + "!"
+    return f"Hello {name} {surname}!"
 
 
-result1 = greet("John", "Doe")
+result1 = greet("giorgi", "sulaqvelidze")
 print(result1)
 
 
