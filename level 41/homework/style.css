@@ -1,0 +1,102 @@
+/* 2)  */
+input {
+    border: 2px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+  }
+  
+  /* 3)  */
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* 4)  */
+  input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* 5)  */
+  .error-message {
+    color: red;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .error-message::before {
+    content: "⚠️ ";
+    margin-right: 5px;
+  }
+  
+  /* 6)  */
+  .padded-div {
+    padding: 20px;
+    background-color: #f0f0f0;
+  }
+  
+  /* 7) */
+  .padding-example {
+    padding: 10px 20px 15px 5px; 
+  }
+  
+  /* 8) r */
+  .box-border {
+    border: 3px solid #333;
+    padding: 10px;
+  }
+  
+  /* 9) */
+  .rounded-box {
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    padding: 15px;
+  }
+  
+  /* 10) */
+  p {
+    margin: 20px 0;
+  }
+  
+  /* 11)  */
+  .custom-button {
+    padding: 12px 24px;
+    border: 2px solid #333;
+    background-color: #ff6600;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #cc5200;
+  }
+  
+  /* 12)  */
+  .shadow-box {
+    border: 2px solid #ccc;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+  }
+  
+  /* 13)  */
+  li {
+    margin-bottom: 10px;
+  }
+  
+  /* 14) */
+  .negative-margin {
+    margin-top: -10px;
+  }
+  
