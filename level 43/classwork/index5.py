@@ -8,4 +8,3 @@ def complex_calc(a, b):
 print(complex_calc(4, 5))  
 print(complex_calc(3, 5))  
 print(complex_calc(10, 2)) 
-print(complex_calc(7, 2))  
