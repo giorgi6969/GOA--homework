@@ -1,0 +1,84 @@
+.center-div {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  
+  /* 2 */
+  .image-right {
+    display: block;
+    margin-left: auto;
+  }
+  /* 3 */
+  .sticky-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+  }
+  /* 4 */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    height: 200px; 
+  }
+  
+  .button-container .button {
+    margin-top: auto;
+  }
+  /* 5 */
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-container img {
+    width: 100%;
+  }
+  
+  .image-container .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+  }
+  /* 6 */
+  .fixed-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: gray;
+    text-align: center;
+  }
+  /* 7 */
+  .box-up {
+    position: relative;
+    top: -10px;
+  }
+  /* 8 */
+  .container {
+    display: flex;
+  }
+  
+  .container .box {
+    flex: 1;
+  }
+  
+  
+  /* 9 */
+  .image-left {
+    float: left;
+    margin-right: 10px;
+  }
+  /* 10 */
+  .space-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  

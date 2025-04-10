@@ -1,0 +1,17 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: green;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, left 0.3s ease, top 0.3s ease;
+    position: relative;
+}
+
+.box:hover {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(45deg);
+}
+
+.box:active {
+    transform: translate(-50px, -100px);
+}

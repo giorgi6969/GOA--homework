@@ -1,0 +1,25 @@
+.box {
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease, left 0.3s ease, top 0.3s ease, font-size 1s ease, color 2s ease, background-color 2s ease;
+    position: relative;
+}
+
+.box:hover {
+    width: 1000px;
+    height: 1000px;
+    transform: rotate(45deg);
+}
+
+.box:active {
+    transform: translate(-50px, -100px);
+    font-size: 25px;
+    color: black;
+    background-color: white;
+}
