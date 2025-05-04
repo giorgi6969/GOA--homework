@@ -1,0 +1,50 @@
+body {
+    background: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  .container {
+    display: grid;
+    grid-template-areas:
+      "hero hero side1"
+      "hero hero side2"
+      "banner banner banner"
+      "footer footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    width: 90%;
+    max-width: 900px;
+  }
+  .hero { grid-area: hero; background: linear-gradient(45deg, hotpink, violet); }
+  .side1 { grid-area: side1; background: linear-gradient(45deg, skyblue, cyan); }
+  .side2 { grid-area: side2; background: linear-gradient(45deg, skyblue, cyan); }
+  .banner { grid-area: banner; background: linear-gradient(45deg, violet, pink); }
+  .footer {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+  }
+  .footer div {
+    background: linear-gradient(45deg, pink, orange);
+  }
+  .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    height: 100px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  .item:hover {
+    transform: scale(1.05);
+  }
