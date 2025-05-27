@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Page</title>
+  <script>
+    window.onload = function() {
+      // 2) 
+      let hobby = prompt("what is your favorite hbby");
+      alert("Your favorite hobby is: " + hobby);
+
+      // 3) 
+      let firstName = prompt("name:");
+      let lastName = prompt("surname:");
+      let fullName = firstName + " " + lastName;
+      alert("Your full name is: " + fullName);
+
+      // 4) 
+      let message = prompt("Enter a message:");
+      document.getElementById("myParagraph").innerText = message;
+
+      // 5) 
+      let emoji = prompt("What is your favorite emoji?");
+      alert("Thanks! Your favorite emoji is: " + emoji);
+
+   //6
+      let word = prompt("Enter a word to set as page title:");
+      document.title = word;
+    };
+  </script>
+</head>
+<body>
+  <p id="myParagraph">Initial text.</p>
+</body>
+</html>
