@@ -1,0 +1,52 @@
+<!-- 7. -->
+<script>
+  let result1 = confirm("Do you want to continue?");
+  console.log("Page load confirm:", result1);
+</script>
+
+<!-- 8. -->
+<button onclick="showConfirm()">Click Me</button>
+<script>
+  function showConfirm() {
+    let userResponse = confirm("Are you sure?");
+    console.log("Button confirm result:", userResponse);
+  }
+</script>
+
+<!-- 9. -->
+<script>
+  let result2 = confirm("Confirm on page load?");
+  alert("You clicked: " + result2);
+</script>
+<form id="userForm">
+  <input type="text" name="username" placeholder="Username" />
+  <input type="email" name="email" placeholder="Email" />
+  <input type="text" name="phone" placeholder="Phone" />
+  <button type="submit">Submit</button>
+</form>
+
+<!-- 10. On form submit, log username -->
+<script>
+  document.getElementById("userForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    let username = this.elements["username"].value;
+    console.log("Username:", username);
+  });
+</script>
+
+<!-- 11. Button to clear email -->
+<button onclick="clearEmail()">Clear Email</button>
+<script>
+  function clearEmail() {
+    document.querySelector('[name="email"]').value = "";
+  }
+</script>
+
+<!-- 12. Button to alert phone number -->
+<button onclick="alertPhone()">Show Phone</button>
+<script>
+  function alertPhone() {
+    let phone = document.querySelector('[name="phone"]').value;
+    alert("Phone: " + phone);
+  }
+</script>

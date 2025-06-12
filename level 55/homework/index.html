@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1 -->
+    <h2 id="output1"></h2>
+<input type="number" id="ageInput" placeholder="your age">
+<input type="text" id="phraseInput" placeholder="favorite word">
+<button onclick="handleClick1()">გაგზავნა</button>
+
+<script>
+  function handleClick1() {
+    const age = document.getElementById('ageInput').value;
+    const phrase = document.getElementById('phraseInput').value;
+    document.getElementById('output1').textContent = `your age: ${age}, favorite word: ${phrase}`;
+  }
+</script>
+<!-- 2 -->
+ <label for="rangeInput">Current value: <span id="rangeValue">50</span></label><br>
+<input type="range" id="rangeInput" min="0" max="100" value="50">
+
+<script>
+  const range = document.getElementById('rangeInput');
+  const span = document.getElementById('rangeValue');
+  range.addEventListener('input', () => {
+    span.textContent = range.value;
+  });
+</script>
+<!-- 3 -->
+ <input type="text" id="nameInput" placeholder="giorgi">
+<input type="text" id="emojiInput" placeholder="emoji">
+<button onclick="greet()">hi!</button>
+<h1 id="greeting"></h1>
+
+<script>
+  function greet() {
+    const name = document.getElementById('nameInput').value;
+    const emoji = document.getElementById('emojiInput').value;
+    document.getElementById('greeting').textContent = `please greet: ${emoji} ${name}!`;
+  }
+</script>
+<!-- 4 -->
+ <textarea id="messageInput" placeholder="enter notifacation"></textarea><br>
+<button onclick="showMessage()">show</button>
+<p id="messageOutput"></p>
+
+<script>
+  function showMessage() {
+    const msg = document.getElementById('messageInput').value;
+    document.getElementById('messageOutput').textContent = msg;
+    document.body.style.backgroundColor = "lightyellow";
+  }
+</script>
+<!-- 5 -->
+<input type="number" id="num1" placeholder="num 1">
+<input type="number" id="num2" placeholder="num 2">
+<button onclick="sumNumbers()">count</button>
+<h2 id="sumOutput"></h2>
+
+
+  
+
+<!-- 6 -->
+ <input type="text" id="textInput" placeholder="enter text">
+<button onclick="countChars()">count</button>
+<p id="charCount"></p>
+
+<script>
+  function countChars() {
+    const text = document.getElementById('textInput').value;
+    document.getElementById('charCount').textContent = `Characters: ${text.length}`;
+  }
+
+</script>
+<!-- 7 -->
+<input type="text" id="colorInput" placeholder="enter color (red, blue...)">
+<button onclick="changeColor()">change color</button>
+
+<script>
+  function changeColor() {
+    const color = document.getElementById('colorInput').value;
+    document.body.style.backgroundColor = color;
+  }
+</script>
+
+</body>
+</html>
