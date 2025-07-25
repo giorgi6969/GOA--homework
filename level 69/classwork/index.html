@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+
+ 
+  <img id="myPhoto" src="photo.jpg" style="display: none;" alt="photo ">
+
+  <br><br>
+<script> 
+ function showPhoto() {
+      document.getElementById("myPhoto").style.display = "block";
+    }
+
+    function hidePhoto() {
+      document.getElementById("myPhoto").style.display = "none";
+    }
+
+
+let person1 = {
+  name: "ნიკა",
+  age: 22,
+  city: "თბილისი"
+};
+
+let person2 = {
+  name: "ანა",
+  age: 25, 
+  city: "თბილისი"
+};
+
+
+if (person1.age > 18 && person2.age > 18 &&
+    person1.city === "თბილისი" && person2.city === "თბილისი") {
+  console.log("you can vote in tbilisi");
+}
+
+
+
+
+
+</script>
+  
+  <button onclick="showPhoto()">Show</button>
+  <button onclick="hidePhoto()">Hide</button>
+
+  
+</body>
+</html>
+
