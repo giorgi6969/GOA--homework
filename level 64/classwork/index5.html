@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="box3">
+<p id="paragraph">hello world</p>
+
+
+   </div> 
+
+
+   <script>
+const box3 = document.getElementById("box3");    
+const box4 = document.createElement("p");
+box4.textContent = "hello"
+const paragraph = document.getElementById("paragraph");
+box3.replaceChild(box4, paragraph);
+
+   </script>
+</body>
+</html>

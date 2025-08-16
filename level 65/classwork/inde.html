@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+
+<p id="counter">0</p>
+<button onclick="increase()">click</button>
+
+<script>
+  let count = 0;
+
+  function increase() {
+    count++;
+    document.getElementById("counter").innerText = count;
+  }
+</script>
+
+</body>
+</html>

@@ -7,28 +7,7 @@ if (number % 2 === 0) {
 } else {
   console.log("is number kenti");
 }
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Show / Hide Photo</title>
-</head>
-<body>
 
- 
-  <img id="myPhoto" src="photo.jpg" style="display: none;" alt="photo ">
-
-  <br><br>
-
-  
-  <button onclick="showPhoto()">Show</button>
-  <button onclick="hidePhoto()">Hide</button>
-
-  
-  
-
-</body>
-</html>
 
  
     function showPhoto() {
