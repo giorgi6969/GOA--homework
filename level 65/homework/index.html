@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework</title>
+  
+</head>
+<body>
+
+  <div id="myDiv"></div>
+
+
+  <div id="counterBox">
+    <button id="minus">-1</button>
+    <span id="count">0</span>
+    <button id="plus">+1</button>
+  </div>
+
+  <script>
+  
+    let position = 0;
+    let direction = 1;
+    function animateDiv() {
+      position += direction * 2;
+      document.getElementById("myDiv").style.top = position + "px";
+      if (position > window.innerHeight - 120) direction = -1;
+      if (position < 0) direction = 1;
+      requestAnimationFrame(animateDiv);
+    }
+    animateDiv();
+
+  
+    let count = 0;
+    document.getElementById("plus").addEventListener("click", function() {
+      count++;
+      document.getElementById("count").textContent = count;
+    });
+    document.getElementById("minus").addEventListener("click", function() {
+      count--;
+      document.getElementById("count").textContent = count;
+    });
+  </script>
+</body>
+</html>

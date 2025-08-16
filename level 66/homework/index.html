@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title> <link rel="stylesheet" href="styles.css"> 
+ 
+</head>
+<body>
+  <div id="myDiv"></div>
+  <script>
+   
+    let position = 0;
+    let direction = 1; 
+
+    function animateDiv() {
+     
+      position += direction * 2;
+      document.getElementById("myDiv").style.top = position + "px";
+   
+      if (position > window.innerHeight - 120) direction = -1;
+      if (position < 0) direction = 1;
+      requestAnimationFrame(animateDiv);
+    }
+    animateDiv();
+  </script>
+</body>
+</html>
+
+ 
