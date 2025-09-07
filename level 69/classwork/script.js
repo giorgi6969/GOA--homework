@@ -7,4 +7,5 @@ heading.addEventListener("pointerdown", function(e) {
   } else {
     e.target.style.fontSize = "30px";
   }
+
 });
